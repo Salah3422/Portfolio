@@ -1,0 +1,66 @@
+body {background-color: #a4d4f5b7;}
+
+
+#college{
+    text-align: center;
+}
+
+#degree{
+    text-align: center;
+}
+
+#name-head{
+    text-align: center;
+}
+
+.pic{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    bottom: 80px;
+    left: 80px;
+}
+
+#description{
+    position: relative;
+    left: 400px;
+    top: 65px;
+}
+
+#about{
+    font-size: 25px;
+}
+
+#experience{
+    font-size: 25px;
+}
+
+#projects{
+    font-size: 25px;
+}
+
+#contact{
+    font-size: 25px;
+}
+
+#interests{
+    position: relative;
+    left: 400px;
+    bottom: 200px;
+}
+
+#achievements{
+    position: relative;
+    left:400px;
+    bottom: 100px;
+}
+
+#button{
+    position: relative;
+    top: 150px;
+    right: 124px;
+}
+
+#border{
+    background-color: whitesmoke;
+}
