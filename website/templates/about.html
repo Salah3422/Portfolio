@@ -4,8 +4,7 @@
 
 
 {% block content %}
-<br>
-<div class="jumbotron">
+<div class="jumbotron" id="headline">
     <h1 id="name-head">Salah Zahran</h1>
     <h5 id="college">State University of New York College at Buffalo</h5>
     <p id="degree">Bachelor of Science in Computer Information Systems</p>
@@ -15,27 +14,38 @@
 <div class="container", id="border">
     <div class="container", id="description">
         <h2>About Me</h2>
-        <p>Lorem Ipsum Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum Lorem IpsumIpsum 
-            <br>fdsafsd
-            <br>sdafsdfas
-            <br>sdafsdL</p>
+        <p>I'm Salah and I am fresh graduate in Computer Science. I love coding websites and 
+            <br>making cool and fun programs. I am a python programmer and I love web development,
+            <br>data science and machine learning! I'm currently working on my Master's degree, but 
+            <br>am also looking for an entry level position in the meantime as well. I encourage anyone
+            <br>to reach out to me, and also check out some of the projects I've created.</p>
     </div>
     <div>
         <img src="../static/images/salah-pic1.PNG", class="pic">
-        <button type="button" class="btn btn-primary btn-lg" id="button">Download Resume</button>
+        <button type="button" class="btn btn-primary btn-lg" id="button"> 
+        <a href="resume/salah-zahran-resume.pdf" download="salah-zahran-resume" id="resume-btn">Download Resume</a>
+        </button>
     </div>
-
+    
     <div class="container" id="interests">
         <div>
             <h2>Interests</h2>
-            <p>These are my interests:</p>
+            <ul>
+                <li>Mathematics - Calculus, Linear algebra</li>
+                <li>Software Development - web app development(full-stack), APIs </li>
+                <li>Data Science - Data analysis, Machine/Deep Learning, Computer Vision</li>
+                <li>Hobbies - Reading, Basketball, Video games</li>
+            </ul>
         </div>
     </div>
 
     <div class="container" id="achievements">
         <div>
-            <h2>achievements</h2>
-            <p>These are my achievements</p>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Honor Roll - <i>Magna Cum Laude</i></li>
+                <li>Dean's List - National Honors Society</li>
+            </ul>
         </div>
     </div>
 

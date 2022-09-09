@@ -1,4 +1,6 @@
-body {background-color: #a4d4f5b7;}
+/* {background-color: #a4d4f5b7;} gray bg: #afb4b6e8 */
+
+body {background-color: #afb4b6e8;}
 
 
 #college{
@@ -22,37 +24,67 @@ body {background-color: #a4d4f5b7;}
 }
 
 #description{
+    color: maroon;
     position: relative;
     left: 400px;
     top: 65px;
 }
 
 #about{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 #experience{
-    font-size: 25px;
+    font-size: 18px;
+}
+
+#headline{
+    background-color:whitesmoke;
+    color: maroon;
 }
 
 #projects{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 #contact{
+    font-size: 18px;
+}
+
+#portfolio{
     font-size: 25px;
+    position: relative;
+    left: 750px;
+    bottom: 1px;
+    color: #f8f9fa;
 }
 
 #interests{
+    color: maroon;
     position: relative;
     left: 400px;
     bottom: 200px;
 }
 
 #achievements{
+    color: maroon;
     position: relative;
     left:400px;
-    bottom: 100px;
+    bottom: 175px;
+}
+
+#buff{
+    position: relative;
+    bottom: 20px;
+    height:100px;
+    width:100px;
+}
+
+#surc{
+    height:100px;
+    width:175px;
+    position: relative;
+    bottom: 20px;
 }
 
 #button{
@@ -63,4 +95,12 @@ body {background-color: #a4d4f5b7;}
 
 #border{
     background-color: whitesmoke;
+}
+
+#contact-page{
+    color: maroon;
+}
+
+#resume-btn{
+   color: black; 
 }
