@@ -87,6 +87,28 @@ body {background-color: #afb4b6e8;}
     bottom: 20px;
 }
 
+#tutoring{
+    height: 175px;
+    width: 175px;
+    position: relative;
+    bottom: 25px;
+}
+
+#github{
+    width: 200px;
+}
+
+#linkedin{
+    width: 200px;
+}
+
+#sidearm{
+    position: relative;
+    bottom: 10px;
+    height: 100px;
+    width: 225px;
+}
+
 #button{
     position: relative;
     top: 150px;

@@ -4,25 +4,42 @@
 
 
 {% block content %}
-
 <div class="container" id="contact-page">
     <!--Section: Contact v.2-->
     <section class="mb-4">
 
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+    <hr>
+    <div class="container">
+        <center><h2>Anybody interested please don't hesitate to reach out to me! Whether it be for employment purposes or other matters, I am open to speaking and collaborating with anybody.</h2></center>
+        <hr>
+    </div>
+
+    <div class="jumbotron">
+        <center><h1>Want to connect with me?</h1>
+        <h2>Connect with me on LinkedIn and Github via the icon links below:</h2>
+        <a href="https://www.linkedin.com/in/salah-zahran-540858180" target="_blank"><img src="../static/images/li-logo.png" id="linkedin"></a>
+        <a href="https://github.com/Salah3422" target="_blank"><img src="../static/images/github-logo.png" id="github"></a>
+        <h1>OR...</h1>
+        </center>
+    </div>
+
+    <center><h1><b>Direct Message</h1></b></center>
+    <br>
+
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. Messages will be sent to my personal email which is checked daily.</p>
+
+        {{text}}
 
     <div class="row">
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
+            <form id="contact-form" name="contact-form" action="contact" method="POST">
                 <!--Grid row-->
                 <div class="row">
-
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
@@ -31,7 +48,6 @@
                         </div>
                     </div>
                     <!--Grid column-->
-
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
@@ -40,10 +56,8 @@
                         </div>
                     </div>
                     <!--Grid column-->
-
                 </div>
                 <!--Grid row-->
-
                 <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12">
@@ -54,27 +68,23 @@
                     </div>
                 </div>
                 <!--Grid row-->
-
                 <!--Grid row-->
                 <div class="row">
-
                     <!--Grid column-->
                     <div class="col-md-12">
-
                         <div class="md-form">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Your message</label>
                         </div>
-
                     </div>
                 </div>
+
+                <div class="text-center text-md-left">
+                    <center><button type="submit" form="contact-form" class="btn btn-primary" name="submit">Send</button></center>
+                </div>
                 <!--Grid row-->
-
             </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
+                
             <div class="status"></div>
         </div>
         <!--Grid column-->
@@ -96,12 +106,10 @@
             </ul>
         </div>
         <!--Grid column-->
-
+    
     </div>
 
 </section>
 <!--Section: Contact v.2-->
 </div>
-
-
 {% endblock %}
