@@ -20,13 +20,13 @@ body {background-color: #afb4b6e8;}
     height: 300px;
     width: 200px;
     bottom: 80px;
-    left: 80px;
+    left: 104px;
 }
 
 #description{
     color: maroon;
     position: relative;
-    left: 400px;
+    left: 440px;
     top: 65px;
 }
 
@@ -39,7 +39,6 @@ body {background-color: #afb4b6e8;}
 }
 
 #headline{
-    background-color:whitesmoke;
     color: maroon;
 }
 
@@ -54,7 +53,7 @@ body {background-color: #afb4b6e8;}
 #portfolio{
     font-size: 25px;
     position: relative;
-    left: 750px;
+    left: 850px;
     bottom: 1px;
     color: #f8f9fa;
 }
@@ -62,15 +61,15 @@ body {background-color: #afb4b6e8;}
 #interests{
     color: maroon;
     position: relative;
-    left: 400px;
+    left: 440px;
     bottom: 200px;
 }
 
 #achievements{
     color: maroon;
     position: relative;
-    left:400px;
-    bottom: 175px;
+    left:440px;
+    bottom: 220px;
 }
 
 #buff{
@@ -95,11 +94,15 @@ body {background-color: #afb4b6e8;}
 }
 
 #github{
-    width: 200px;
+    width: 175px;
+}
+
+#connection{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #linkedin{
-    width: 200px;
+    width: 175px;
 }
 
 #sidearm{
@@ -112,11 +115,26 @@ body {background-color: #afb4b6e8;}
 #button{
     position: relative;
     top: 150px;
-    right: 124px;
+    right: 100px;
 }
 
-#border{
-    background-color: whitesmoke;
+#chess-bio{
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+    text-align: left;
+}
+
+#chess{
+    position: relative;
+    left: 450px;
+    bottom: 300px;
+    height: 350px;
+    width: 500px;
+}
+
+#connect{
+    background-color:  #afb4b6e8;
 }
 
 #contact-page{
@@ -125,4 +143,14 @@ body {background-color: #afb4b6e8;}
 
 #resume-btn{
    color: black; 
+}
+
+#success-statement{
+    background-color: lightgray;
+    color: green;
+}
+
+#error-statement{
+    background-color: lightgray;
+    color: red;
 }

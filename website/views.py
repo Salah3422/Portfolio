@@ -1,10 +1,13 @@
-from urllib.request import Request
+from urllib import request
 from flask import Blueprint, render_template
+
+
+
 
 views = Blueprint('views', __name__)
 
 @views.route('/about')
-def home():
+def about():
     return render_template("about.html")
 
 
@@ -17,18 +20,7 @@ def experience():
 def projects():
     return render_template("projects.html")
 
-@views.route("/contact", methods=['GET', 'POST'])
+
+@views.route('/contact')
 def contact():
-        return render_template("contact.html")
-
-
-
-'''
-@views.route("/contact/<text>", text="Thank you!", methods=['GET', 'POST'])
-def contact(text):
-    if Request.method == "POST":
-        return render_template("/contact/<text>")
-    else:
-        return render_template("contact.html")
-'''  
-
+    return render_template("contact.html")
