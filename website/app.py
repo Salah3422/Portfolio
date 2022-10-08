@@ -1,24 +1,28 @@
+from email import message
 import sys
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
 import smtplib
-
+#from models import db, Email
+from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail, Message
 
 sys.path.append("..")
 
 '''
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] =\
+app.config['SQLALCHEMY_DATABASE_URI'] =
         'sqlite:///' + os.path.join(basedir, 'database.db')
 '''
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'this is the secret key *change later*'
+
+
+db = SQLAlchemy(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///email.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)
 
 
 class Email(db.Model):
@@ -36,6 +40,7 @@ class Email(db.Model):
 
     def __repr__(self):
         return self.name
+
 
 
 
@@ -97,11 +102,12 @@ def contact_submission():
 
 
 
-@app.route('/luffy/')
-def luffy():
+@app.route('/database')
+def database():
     emails = Email.query.all()
-    return render_template("db.html", emails=emails)   
-    
+    return render_template("db.html", emails=emails)
+
+
 
 if __name__ == '__main__':
     db.create_all()

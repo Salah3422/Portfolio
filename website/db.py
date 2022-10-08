@@ -1,8 +1,8 @@
-#from app import db, Email
+from app import db, Email
 
-#print(Email.query.all())
+print(Email.query.all())
 
-#print(Email.query.first())
+print(Email.query.first())
 
 #print(Email.query.filter_by(name='salah').all())
 
@@ -11,7 +11,6 @@
 
 
 # clear database
-# db.drop_all()
-# db.create_all()
-# db.session.commit()
-
+db.drop_all()
+db.create_all()
+db.session.commit()

@@ -13,74 +13,84 @@
 </div>
 
 <div class="jumbotron", id="border">
-    <div class="container", id="description">
-        <h2>About Me</h2>
-        <p>I'm Salah and I am fresh graduate in Computer Science. I love coding websites and 
-            <br>making cool and fun programs. I am a python programmer and I love web development,
-            <br>data science and machine learning! I'm currently working on my Master's degree, but 
-            <br>am also looking for an entry level position in the meantime as well. I encourage anyone
-            <br>to reach out to me, and also check out some of the projects I've created.</p>
-    </div>
-    <div>
-        <img src="../static/images/profile.webp", class="pic">
-        <button type="button" class="btn btn-primary btn-lg" id="button"> 
+    <div class="row", id="description">
+        <div class="col-md-4">
+            <img src="../static/images/profile.webp", class="pic"><br>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="button"> 
             <a href="./resume/salah-zahran-resume.pdf" id="resume-btn" download="sz-resume.pdf">Download Resume</a>
-        </button>
-    </div>
-    
-    <div class="container" id="achievements">
-        <div>
-            <h2>Achievements</h2>
-            <ul>
-                <li>Honor Roll - <i>Magna Cum Laude</i></li>
-                <li>Dean's List - National Honors Society</li>
-            </ul>
+            </button>
         </div>
-    </div>
-
-    <div class="container" id="interests">
-        <div>
-            <h2>Interests</h2>
+        <div class="col-md-8">
+            <h2>About Me</h2>
+            <p>I'm Salah and I am fresh graduate in Computer Science. I love coding websites and 
+                <br>making cool and fun programs. I am a python programmer and I love web development,
+                <br>data science and machine learning! I'm currently working on my Master's degree, but 
+                <br>am also looking for an entry level position in the meantime as well. I encourage anyone
+                <br>to reach out to me, and also check out some of the projects I've created.</p> 
+                <br>
+            <h2 id="achievements">Achievements</h2>
+            <ul>
+                <li>Honor Roll - <i>Magna Cum Laude</i>, GPA: 3.72</li>
+                <li>Dean's List - National Honors Society</li>
+                <li>Student Merit Scholarship - Graduate Student Grant of 50% tuition costs</li>
+            </ul>
+            <br>
+            <h2 id="interests">Interests</h2>
             <ul>
                 <li>Mathematics - Calculus, Linear algebra</li>
                 <li>Software Development - web app development(full-stack), APIs </li>
                 <li>Data Science - Data analysis, Machine/Deep Learning, Computer Vision</li>
                 <li>Hobbies - Reading, Basketball, Video games</li>
-            </ul>
+            </ul><br>
         </div>
-    </div>
-
-
-
-    <div class="container" id="chess-bio">
-        <h2>Chess</h2><br>
-        <p>The game of chess resonates powerfully with my<br>
-            perspective on society and life. It is a strong<br>
-            and accurate representation of how to strategically<br> 
-            persevere and triumph in any cognitive or quantitative<br> 
-            challenge. In fact, it can also be attributed to social <br>
-            scenarios as well. The game has been a part of my life <br>
-            since childhood days, and I have always spent time improving<br> 
-            my skills. The game of chess is responsible for many of my <br>
-            current attributes and qualities and motivates me to become <br>
-            the best version of myself imagineable. To face all problems <br>
-            and challenges with a cool and calm mind and to analyze each <br>
-            situation accurately. Never falter even during struggle and <br>
-            adversity and never grow complacent. Always look to improve <br>
-            and stay level-headed while traveling down the instricate <br>
-            and arduous path of life.   </p>
-    </div>
-
-
-    <div class="container">
-        <img src="../static/images/chess.jpg" id="chess">
-    </div>
-
-    <center><b><p>~ The term "checkmate" originated from the words <i>Shah Mat!</i> Persian for "The king has been captured!"</p></b></center>
-
+    <div>
 </div>
 
+<div class="container">
+    <hr><br>
+    <center><h1><u>Technical Skills</u></h1></center><br>
+    <br>
+    
+    <div>
+        <h4>Python - 4/5</h4>
+        <ul>
+            <li>Back-end Development(Flask, Django, Selenium, Rest APIs)</li>
+            <li>Data Analysis/Machine Learning(Pandas, Seaborn, Scikit-learn, TensorFlow)</li>
+            <li>Applications/UI Development(Tkinter, Kivy)</li>
+        </ul>
+    </div>
+    <br>
 
+    <div>
+        <h4>Databases/SQL - 4/5</h4>
+        <ul>
+            <li>MySQL, SQLite, SQLAlchemy, PostgreSQL, Oracle</li>
+            <li>Microsoft Excel, CSV, JSON, XML</li>
+        </ul>
+    </div>
+    <br>
 
+    <div>
+        <h4>Front-end Development - 3/5</h4>
+        <ul>
+            <li>Languages(HTML, CSS, JavaScript)</li>
+            <li>Frameworks(jQuery, Bootstrap)</li>
+        </ul>
+    </div>
+    <br>
+
+    <div>
+        <h4>Operating Systems/Deployment - 3/5</h4>
+        <ul>
+            <li>Operating Systems(Microsoft Windows, Linux)</li>
+            <li>Deployment/Version Control(Heroku, Github Pages, Git/Github</li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
 
 {% endblock %}

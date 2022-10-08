@@ -24,3 +24,8 @@ def projects():
 @views.route('/contact')
 def contact():
     return render_template("contact.html")
+
+
+@views.route('/luffy')
+def contact():
+    return render_template("db.html")
