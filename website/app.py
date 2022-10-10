@@ -45,7 +45,7 @@ class Email(db.Model):
 
 
 
-@app.route('/about')
+@app.route('/')
 def about():
     return render_template("about.html")
 
