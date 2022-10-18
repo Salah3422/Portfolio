@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Experience{% endblock %}
+
+
+{% block content %}
+
+<div style="color: maroon;">
+    <div class="jumbotron">
+        <h1><center><b>Experience & Research</b></center></h1>
+        <hr>
+    </div>
+
+    <div class="jumbotron">
+        <center>
+        <img src="../static/images/buff.png" id="buff">
+        <h2>API Developer Intern</h2>
+        <h5>SUNY Buffalo State - Project Management - Buffalo, NY</h5>
+        <h5>Supervisor - <a href="resume/reccomendation.doc" download="recommendation">Recommendation</a>  Rada Montroy</h5>
+        </center>
+        <hr>
+        <div class="container">
+            <p>- Studied and researched Qualtrics API documentation specifically API libraries and implementations used in Qualtrics Surveys, and tested different API calls using Qualtrics </p>
+            <p>- Created a survery to be used to retrieve user input, in this case a course CRN, and output corresponding course information: time and location, subject, etc. This survery would be used by professors and advisors to initiate API calls to the self-service system to retrieve JSON data.</p>
+            <p>- Implemented a working prototype for the survey which can acceept CNR inputs as API requests and retrieve and process the correct data from the endpoint, and output a response to the user</p>
+        </div>
+
+    </div>
+
+
+    <div class="jumbotron">
+        <center>
+        <img src="../static/images/research.png" id="surc">
+        <h2>Deep Learning Research</h2>
+        <h5>SURC, CCSCNE Research Conferences - Virtual</h5>
+        <h5>Supervisor - <a href="resume/reccomendation2.doc" download="recommendation">Recommendation</a>  Sarbani Banerjee</h5>
+        </center>
+        <hr>
+        <div class="container">
+            <p>- Researched Deep Learning principles/algorithms, focusing on object detection models,</p>
+            <p>- Devised methods to increase accuracy by altering aspects of NNs e.g. backpropagation</p>
+            <p>- Developed a back-end application with Django, loads an object detection model via API
+            call and outputs result on a webpage upon user input, presented results at conferences</p>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <center>
+        <img src="../static/images/mtps-logo.jpg" id="tutoring">
+        <h2>Computer Science Tutor</h2>
+        <h5>Math Science Technology Prep School</h5>
+        <h5>Supervisor - Sarbani Banerjee/Raymond Farrell</h5>
+        </center>
+        <hr>
+        <div class="container">
+            <p>- Lead a group of 3 CS student tutors to teach CS principles to high school students</p>
+            <p>- Instructed high school classroom on computer science fundamentals with scratch programming and interactive activities such as game development once per week</p>
+            <p>- Constructed a curriculum plan to map-out/organize teaching process & 12 lesson plans</p>
+        </div>
+    </div>
+
+
+    <div class="jumbotron">
+        <center>
+        <img src="../static/images/sidearm.png" id="sidearm">
+        <h2>Stream Support Specialist</h2>
+        <h5>SIDEARM Sports - Syracuse, NY</h5>
+        <h5>Supervisor - Mike Gosnell</h5>
+        </center>
+        <hr>
+        <div class="container">
+            <p>- Collaborate with development team and provide technical support to troubled clients</p>
+            <p>- Monitor over 100 live streams daily and troubleshoot any incoming errors/disconnections</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

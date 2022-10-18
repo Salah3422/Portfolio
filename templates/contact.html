@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+
+{% block content %}
+<div class="container" id="contact-page">
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+    <!-- Error message -->
+    {% if error_statement %}
+
+        <div class="alert alert-wawrning alert-dismissible fade show" role="alert" id="error-statement">
+            {{ error_statement }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    {% endif %}
+
+    <!-- Success message -->
+    {% if success_statement %}
+
+        <div class="alert alert-wawrning alert-dismissible fade show" role="alert" id="success-statement">
+            {{ success_statement }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    {% endif %}
+
+    
+    <!--Section heading-->
+    
+    <h1 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h1>
+    <div class="container">
+        <center><h2 id="connection">Need to get in touch with me for whatever reason? Don't hesitate to reach out to me privately or via social media. My current media platforms and contact information has been listed below, along with links to all my online portfolios. </h2></center>
+        <hr>
+    </div>
+
+
+    <br>
+    <div class="jumbotron" id="connect">
+        <center><h1>Want to connect?</h1>
+        <h3>Connect with me on LinkedIn and Github via the icon links below:</h3><br>
+        <a href="https://www.linkedin.com/in/salah-zahran-540858180" target="_blank"><img src="../static/images/li-logo.png" id="linkedin"></a>
+        <a href="https://github.com/Salah3422" target="_blank"><img src="../static/images/github-logo.png" id="github"></a><br>
+        <br>
+        <h1>OR...</h1>
+        <br>
+        </center>
+    </div>
+
+    <center><h1 id="redirect1"><b>Direct Message</b></h1></center>
+    <br>
+
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. Messages will be sent to my personal email which is checked daily.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="/contact_submission" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email_address" name="email_address" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" value="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-md-left">
+                    <center><button type="submit" form="contact-form" class="btn btn-primary" value="submit" name="submit">Send</button></center>
+                </div>
+                <!--Grid row-->
+            </form>
+                
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Buffalo, NY 14213, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 315 243 3422</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>SalahZahranAI@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+    
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+</div>
+ 
+{% for email in emails %}
+    <h4>{{ email.id }}</h4>
+{% endfor %}
+
+{% endblock %}

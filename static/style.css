@@ -1,0 +1,130 @@
+/* {background-color: #a4d4f5b7;} gray bg: #afb4b6e8 */
+
+body {background-color: #afb4b6e8;}
+
+
+#college{
+    text-align: center;
+}
+
+#degree{
+    text-align: center;
+}
+
+#name-head{
+    text-align: center;
+}
+
+.pic{
+    height: 300px;
+    width: 200px;
+}
+
+#description{
+    color: maroon;
+}
+
+#about{
+    font-size: 18px;
+}
+
+#experience{
+    font-size: 18px;
+}
+
+#headline{
+    color: maroon;
+}
+
+#projects{
+    font-size: 18px;
+}
+
+#contact{
+    font-size: 18px;
+}
+
+#portfolio{
+        font-size: 25px;
+        position: relative;
+        left: 850px;
+        bottom: 1px;
+        color: #f8f9fa;
+}
+
+#interests{
+    color: maroon;
+}
+
+#achievements{
+    color: maroon;
+}
+
+#buff{
+    height:100px;
+    width:100px;
+}
+
+#surc{
+    height:100px;
+    width:175px;
+    position: relative;
+    bottom: 20px;
+}
+
+#tutoring{
+    height: 175px;
+    width: 175px;
+    position: relative;
+    bottom: 25px;
+}
+
+#github{
+    width: 175px;
+}
+
+#connection{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#linkedin{
+    width: 175px;
+}
+
+#sidearm{
+    position: relative;
+    bottom: 10px;
+    height: 100px;
+    width: 225px;
+}
+
+#chess-bio{
+    text-align: left;
+}
+
+#chess{
+    height: 350px;
+    width: 500px;
+}
+
+#connect{
+    background-color:  #afb4b6e8;
+}
+
+#contact-page{
+    color: maroon;
+}
+
+#resume-btn{
+   color: black;
+}
+
+#success-statement{
+    background-color: lightgray;
+    color: green;
+}
+
+#error-statement{
+    background-color: lightgray;
+    color: red;
+}
